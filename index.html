@@ -135,17 +135,17 @@
 </script>
 <style>
     body {
-        --primary: 25,91,255;
-        --color: 44, 62, 80;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        height: 100vh;
-        background: #f4f7f8;
-        height: calc(var(--vh, 1vh) * 100);
-        overflow: hidden;
-        color: rgb(var(--color));
-    }
+    --primary: 25,91,255;
+    --color: 44, 62, 80;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh; /* Cambié height por min-height */
+    background: #f4f7f8;
+    height: calc(var(--vh, 1vh) * 100);
+    overflow: auto; /* Permite scroll */
+    color: rgb(var(--color));
+}
     * {
         list-style: none;
         outline: none;
@@ -154,14 +154,14 @@
         font-family: 'Poppins', sans-serif;
         box-sizing: border-box;
     }
-    .content {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        overflow: hidden;
-    }
+   .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: auto; /* Permite scroll */
+}
     .con-user {
         padding-top: 50px;
         width: 100%;
